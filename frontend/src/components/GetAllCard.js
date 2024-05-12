@@ -6,7 +6,7 @@ const GetAllCard = (props) => {
     const {cars, fetchData} = props;
     const onDeleteHandler = async(id)=>{
         try{
-            const res = await axios.delete(`http://localhost:5001/car/deleteCar/${id}`);
+            const res = await axios.delete(`https://car-showroom-36ga.onrender.com/car/deleteCar/${id}`);
             console.log(res);
             toast.warn("Car Deleted Successfully");
             fetchData();

@@ -16,7 +16,7 @@ const Card = (props) => {
       toast.error("Please fill all the fields");
     }
     try{
-      const Car = await axios.post("http://localhost:5001/car/addCar", carData);
+      const Car = await axios.post("https://car-showroom-36ga.onrender.com/car/addCar", carData);
       toast.success("Car added to the Collection Successfully!!")
       props.fetchData();
       console.log(Car);

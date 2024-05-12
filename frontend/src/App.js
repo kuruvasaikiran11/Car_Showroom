@@ -10,7 +10,7 @@ const App = () => {
   const [cars, setCars] = useState([]);
     const fetchData = async()=>{
         try{
-            const res = await axios.get("http://localhost:5001/car/getCars")
+            const res = await axios.get("https://car-showroom-36ga.onrender.com/car/getCars")
             // console.log(res.data.Car)
             setCars(res.data.Car);
         }catch(err){
